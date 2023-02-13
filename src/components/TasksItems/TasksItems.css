@@ -1,0 +1,20 @@
+.strike {
+  text-decoration: line-through;
+}
+.tasks__list {
+  padding: 0rem 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.tasks__actions {
+  display: flex;
+  gap: 1rem;
+}
+.no-task {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}

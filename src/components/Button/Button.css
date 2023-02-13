@@ -1,0 +1,27 @@
+.btn {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn__red {
+  border: 1px solid #eb2626;
+  background-color: #eb2626;
+}
+.btn__default {
+  border: 1px solid #a39bd2;
+  background-color: #a39bd2;
+}
+.btn--lg {
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.delete {
+  color: #eb2626;
+}
+.btn__icon {
+  border: none;
+}
+.edit {
+  color: #2e2758;
+}
