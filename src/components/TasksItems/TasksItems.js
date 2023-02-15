@@ -37,6 +37,7 @@ const TasksItems = ({
           return (
             <TasksItem
               item={item}
+              key={item.id}
               tasksCompletedHandler={tasksCompletedHandler}
               tasksDeleteHandler={tasksDeleteHandler}
               tasksSaveHandler={tasksSaveHandler}

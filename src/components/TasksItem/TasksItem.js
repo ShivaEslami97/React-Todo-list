@@ -12,7 +12,7 @@ const TasksItem = ({
   editData,
 }) => {
   return (
-    <li key={item.id} className="tasks__list">
+    <li className="tasks__list">
       {!item.isEditing ? (
         <Checkbox
           task={item.task}

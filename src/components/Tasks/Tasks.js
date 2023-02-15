@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import TasksFilter from "../TasksFilter/TasksFilter";
 import "./Tasks.css";
 import AddTask from "../AddTask/AddTask";
@@ -46,8 +46,17 @@ function reducer(tasks, action) {
 }
 
 const Tasks = ({ items }) => {
-  const [tasks, dispatch] = useReducer(reducer, items);
+  const initTasks = () => {
+    const taskValue = window.localStorage.getItem("tasks");
+    return taskValue !== null ? JSON.parse(taskValue) : items;
+  };
+  const [tasks, dispatch] = useReducer(reducer, null, initTasks);
   const [filteredDay, setfilteredDay] = useState("Today");
+
+  useEffect(() => {
+    // when task array gets updated
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   /// filter tasks by day
   const filterChangeHandler = (selectedDay) => {
