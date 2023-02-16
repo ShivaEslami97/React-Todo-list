@@ -1,3 +1,29 @@
+# ReactJS Todo list
+
+This project is a simple To-Do List App, using the React JS library with CRUD functionalities.
+
+## Demo
+
+You can see the demo [here](https://shiva-ese-react-todo-list.netlify.app/) 👈👈
+
+## Screenshots
+
+## 🚀 Features
+
+- Add new task.
+- Set Day for new tasks.
+- Edit added tasks.
+- Remove specific todo item.
+- Check task as done via checkbox and strikethrough.
+- Save todos to Local Storage.
+- Filter tasks by Day (Tomorrow, Today)
+
+## 🤝 Support
+
+Contributions, issues, and feature requests are welcome!
+
+Give a ⭐️ if you like this project!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
